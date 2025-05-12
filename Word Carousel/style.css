@@ -1,0 +1,39 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.text::after {
+  content: "";
+  background: blue;
+  padding: 5px 10px;
+  animation: change 10s infinite;
+  color: white;
+  border-radius: 4px;
+  margin-left: 4px;
+}
+
+@keyframes change {
+  0% {
+    content: "Pavan";
+  }
+  25% {
+    content: "ME";
+  }
+  50% {
+    content: "YOu";
+  }
+  75% {
+    content: "NO";
+  }
+  100% {
+    content: "THem";
+  }
+}

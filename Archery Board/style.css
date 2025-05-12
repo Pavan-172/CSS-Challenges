@@ -1,0 +1,36 @@
+html,body{
+    margin: 0;
+    padding: 0;
+}
+
+.container, .ring{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    
+}
+.ring{
+    border-radius: 50%;
+}
+
+.circle1{
+    height: 400px;
+    width: 400px;
+    background: black;
+}
+.circle2{
+    height: 300px;
+    width: 300px;
+    background: blue;
+}
+.circle3{
+    height: 200px;
+    width: 200px;
+    background: red;
+}
+.circle4{
+    height: 100px;
+    width: 100px;
+    background: yellow;
+}

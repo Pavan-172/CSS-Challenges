@@ -1,0 +1,29 @@
+html,body{
+    margin: 0;
+    padding: 0;
+    background: black;
+}
+
+.container{
+    /* display: flex; */
+    display: grid;
+    height: 250px;
+    width:calc(250px * 3/2);
+    background: white;
+    margin: 2em auto;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+/* .stripes{
+    flex-grow: 1;
+} */
+
+.strip1{
+    background: blue;
+}
+.strip2{
+    background: white;
+}
+.strip3{
+    background: red;
+}
