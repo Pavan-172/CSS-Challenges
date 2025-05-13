@@ -1,0 +1,52 @@
+html,body{
+    margin: 0 ;
+    padding: 0;
+    background: black;
+}
+
+:root{
+    --height:300px;
+    --width:calc(var(--height) * 3/2)
+}
+/* .flag-madagascar{
+    margin: 30px auto;
+    display: grid;
+    height: var(--height);
+    width: calc(var(--width));
+    grid-template-columns: var(--width) var(--height);
+    grid-template-areas: 
+    "white"
+    "white"
+}
+
+.white{
+    background: white;
+    grid-area: white;
+}
+.red{
+    background: red;
+}
+.green{
+    background: green;
+} */
+
+.flag-madagascar{
+    margin: 30px auto;
+    display: grid;
+    height: var(--height);
+    width: calc(var(--width));
+    grid-template-columns: calc(var(--height)/2) var(--height);
+   
+}
+
+.white{
+    background: white;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+.red{
+    background: red;
+}
+.green{
+    background: green;
+}
