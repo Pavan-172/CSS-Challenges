@@ -1,0 +1,41 @@
+html,body{
+    margin: 0 ;
+    padding: 0;
+}
+:root{
+    --circle-size: 40px;
+    --circle-color: #0b0a0a;
+    --toggle-width: 100px;
+    --circle-color:blue
+}
+
+
+.toggle-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+label{
+    width: var(--toggle-width);
+    height: var(--circle-size);
+    border: 3px solid #0b0a0a;
+    border-radius: 40px;
+    padding: .2em;
+}
+.toggle-input{
+    display: none;
+}
+
+
+.toggle-switch{
+    height: var(--circle-size);
+    width: var(--circle-size);
+    background: var(--circle-color);
+    border-radius: 50%;
+    transition: all 0.5s;
+}
+
+.toggle-input:checked ~ .toggle-switch{
+ transform: translateX(calc(var(--toggle-width) - var(--circle-size)));
+}
